@@ -1,0 +1,72 @@
+[
+{
+"id": "fact_001",
+"category": "factual_recall",
+"question": "What is the average-case time complexity of merge sort?",
+"expected_answer": "O(n log n)",
+"difficulty": "easy"
+},
+{
+"id": "fact_002",
+"category": "factual_recall",
+"question": "Which protocol is primarily used to transfer web pages on the internet?",
+"expected_answer": "HTTP",
+"difficulty": "easy"
+},
+{
+"id": "reason_001",
+"category": "reasoning",
+"question": "If all bloops are razzles and all razzles are lazzles, are all bloops lazzles?",
+"expected_answer": "Yes",
+"difficulty": "medium"
+},
+{
+"id": "reason_002",
+"category": "reasoning",
+"question": "A train travels 120 km in 2 hours. At the same speed, how far will it travel in 5 hours?",
+"expected_answer": "300 km",
+"difficulty": "easy"
+},
+{
+"id": "sum_001",
+"category": "summarisation",
+"question": "Summarise the following in one sentence: Artificial intelligence enables computers to perform tasks that typically require human intelligence, such as learning, reasoning, and decision-making.",
+"expected_answer": "AI allows computers to perform human-like intelligent tasks.",
+"difficulty": "easy"
+},
+{
+"id": "sum_002",
+"category": "summarisation",
+"question": "Summarise in one sentence: Renewable energy comes from naturally replenished sources such as sunlight, wind, and water, reducing dependence on fossil fuels.",
+"expected_answer": "Renewable energy uses naturally replenished resources instead of fossil fuels.",
+"difficulty": "easy"
+},
+{
+"id": "code_001",
+"category": "code_generation",
+"question": "Write a Python function that returns the square of a number.",
+"expected_answer": "Function that returns n*n",
+"difficulty": "easy"
+},
+{
+"id": "code_002",
+"category": "code_generation",
+"question": "Write Python code to check whether a number is even.",
+"expected_answer": "Uses modulo operator to test divisibility by 2",
+"difficulty": "easy"
+},
+{
+"id": "inst_001",
+"category": "instruction_following",
+"question": "Answer using exactly one word: What color is the sky on a clear day?",
+"expected_answer": "Blue",
+"difficulty": "easy"
+},
+{
+"id": "inst_002",
+"category": "instruction_following",
+"question": "Respond with exactly three words describing a cat.",
+"expected_answer": "Any three-word cat description",
+"difficulty": "medium"
+}
+]

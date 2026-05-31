@@ -1,10 +1,18 @@
+import json
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
-openai_key = os.getenv("OPENAI_API_KEY")
-anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+print("OpenAI key found:", os.getenv("OPENAI_API_KEY") is not None)
+print("Anthropic key found:", os.getenv("ANTHROPIC_API_KEY") is not None)
 
-print("OpenAI key found:", openai_key is not None)
-print("Anthropic key found:", anthropic_key is not None)
+with open("data/questions.json", "r", encoding="utf-8") as f:
+    questions = json.load(f)
+
+print(f"Loaded {len(questions)} questions")
+
+for q in questions:
+    print(q["id"], "-", q["category"])
+
+print("Success!")
