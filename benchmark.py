@@ -1,18 +1,20 @@
-import json
+from openai import OpenAI
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
 
-print("OpenAI key found:", os.getenv("OPENAI_API_KEY") is not None)
-print("Anthropic key found:", os.getenv("ANTHROPIC_API_KEY") is not None)
+client = OpenAI()
 
-with open("data/questions.json", "r", encoding="utf-8") as f:
-    questions = json.load(f)
+question = "What is the average-case time complexity of merge sort?"
 
-print(f"Loaded {len(questions)} questions")
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[
+        {
+            "role": "user",
+            "content": question
+        }
+    ]
+)
 
-for q in questions:
-    print(q["id"], "-", q["category"])
-
-print("Success!")
+print(response.choices[0].message.content)

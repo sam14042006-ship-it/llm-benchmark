@@ -1,0 +1,3 @@
+model,avg_score,avg_latency,total_cost,avg_tokens
+claude-haiku,1.0,0.68,0.0002,11.5
+gpt-4o-mini,1.0,0.875,0.0002,12.5

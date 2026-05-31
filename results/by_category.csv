@@ -1,0 +1,3 @@
+model,factual_recall,reasoning
+claude-haiku,1.0,1.0
+gpt-4o-mini,1.0,1.0

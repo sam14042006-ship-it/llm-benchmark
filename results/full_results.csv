@@ -1,0 +1,5 @@
+question_id,category,difficulty,model,response,latency_s,tokens_in,tokens_out,cost_usd,score
+fact_001,factual_recall,easy,gpt-4o-mini,The average-case time complexity of merge sort is O(n log n).,0.82,12,15,0.0001,1.0
+fact_001,factual_recall,easy,claude-haiku,Merge sort runs in O(n log n) average time.,0.65,12,12,0.0001,1.0
+reason_001,reasoning,medium,gpt-4o-mini,"Yes, all bloops must be lazzles.",0.93,15,10,0.0001,1.0
+reason_001,reasoning,medium,claude-haiku,"Yes, because the relationship is transitive.",0.71,15,11,0.0001,1.0

@@ -1,0 +1,46 @@
+[
+  {
+    "question_id": "fact_001",
+    "category": "factual_recall",
+    "difficulty": "easy",
+    "model": "gpt-4o-mini",
+    "response": "The average-case time complexity of merge sort is O(n log n).",
+    "latency_s": 0.82,
+    "tokens_in": 12,
+    "tokens_out": 15,
+    "cost_usd": 0.0001
+  },
+  {
+    "question_id": "fact_001",
+    "category": "factual_recall",
+    "difficulty": "easy",
+    "model": "claude-haiku",
+    "response": "Merge sort runs in O(n log n) average time.",
+    "latency_s": 0.65,
+    "tokens_in": 12,
+    "tokens_out": 12,
+    "cost_usd": 0.0001
+  },
+  {
+    "question_id": "reason_001",
+    "category": "reasoning",
+    "difficulty": "medium",
+    "model": "gpt-4o-mini",
+    "response": "Yes, all bloops must be lazzles.",
+    "latency_s": 0.93,
+    "tokens_in": 15,
+    "tokens_out": 10,
+    "cost_usd": 0.0001
+  },
+  {
+    "question_id": "reason_001",
+    "category": "reasoning",
+    "difficulty": "medium",
+    "model": "claude-haiku",
+    "response": "Yes, because the relationship is transitive.",
+    "latency_s": 0.71,
+    "tokens_in": 15,
+    "tokens_out": 11,
+    "cost_usd": 0.0001
+  }
+]
