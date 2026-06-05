@@ -65,4 +65,36 @@ A reproducible benchmark evaluating three Google Gemini models across **50 hand-
 
 ---
 
+
 ## Project Structure
+llm-benchmark/
+├── benchmark.py          # Runs all API calls → saves raw_results.json
+├── analyse.py            # Scores responses → generates CSV reports
+├── data/
+│   └── questions.json    # 50 hand-crafted questions with expected answers
+├── results/
+│   ├── raw_results.json  # All 150 raw model responses
+│   ├── summary.csv       # Per-model aggregate metrics
+│   ├── by_category.csv   # Score breakdown by task category
+│   └── by_difficulty.csv # Score breakdown by difficulty level
+├── requirements.txt
+└── .env.example
+
+---
+
+## How to Run
+
+```bash
+git clone https://github.com/sam14042006-ship-it/llm-benchmark
+cd llm-benchmark
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+# Create .env file with: GEMINI_API_KEY=your-key (free at aistudio.google.com)
+python benchmark.py
+python analyse.py
+```
+
+---
+
+*Built to develop hands-on AI research skills — methodology mirrors internal LLM evaluation pipelines used at AI product teams.*
